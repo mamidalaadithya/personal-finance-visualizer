@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+/* Existing styles retained above */
+
+/* Chart container styles */
+.full-height {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chart-container {
+  padding: 1.5rem;
+  height: 16rem; /* 256px, similar to h-64 in Tailwind */
+  max-height: 400px; /* limit max height */
+  box-sizing: border-box;
+  width: 100%;
+}
+.chart-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.chart-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+  margin-bottom: 1rem;
+  color: #111827; /* dark text */
+}
+
+/* Layout and typography styles for App.js custom classes */
+
+.app-root {
+  min-height: 100vh;
+  background-color: #f9fafb; /* similar to bg-gray-50 */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .app-root {
+    padding: 2rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
+  max-width: 112rem; /* max-w-7xl */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-header {
+  margin-bottom: 2rem;
+}
+
+.app-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  color: #111827; /* text-gray-900 */
+  margin: 0;
+}
+
+.app-subtitle {
+  color: #4b5563; /* text-gray-600 */
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .app-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.app-sidebar {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.app-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  flex-grow: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.app-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .app-grid-2col {
+    grid-template-columns: 1fr 1fr;
   }
 }

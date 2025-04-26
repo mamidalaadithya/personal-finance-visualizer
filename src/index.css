@@ -11,3 +11,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Chart Card */
+.chart-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.chart-wrapper {
+  flex-grow: 1;
+  min-height: 200px;
+  height: 240px;
+  position: relative;
+}
+
+/* Dashboard */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.dashboard-card h3 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+
+.dashboard-card p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+/* Specific colors */
+.dashboard-card.income p {
+  color: #16a34a;
+}
+
+.dashboard-card.expenses p {
+  color: #dc2626;
+}
+
+.dashboard-card.savings p {
+  color: #4f46e5;
+}
